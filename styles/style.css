@@ -1,0 +1,24 @@
+body{
+  background: #AAAAAA;
+}
+.thumbnail{
+  position:relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.thumbnail div{
+  position:absolute;
+  bottom:-110px;
+  opacity:0;
+  left:0;
+  width:100%;
+  background: rgba(255, 255, 255, 0.75);
+  transition: all 0.2s ease-in;
+
+}
+
+.thumbnail:hover div{
+    bottom:0px;
+    opacity: 1;
+}
